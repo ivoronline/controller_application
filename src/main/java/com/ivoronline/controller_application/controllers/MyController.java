@@ -6,10 +6,12 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class MyController {
 
-  @RequestMapping("/hello")
-  public String sayHello() {
-    System.out.println("Hello from sayHello()");
-    return "test";
+  //================================================================
+  // HELLO
+  //================================================================
+  @RequestMapping("Hello")
+  String hello() {
+    return "Test";
   }
 
 }
